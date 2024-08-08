@@ -1,0 +1,212 @@
+
+/* font styling */
+@font-face{
+    font-family: lavishlyyours;
+    src: url(fonts/Lavishly_Yours/LavishlyYours-Regular.ttf);
+}
+
+
+@font-face{
+    font-family: cormorant;
+    src: url(fonts/Cormorant/Cormorant-VariableFont_wght.ttf);
+}
+
+nav ul a:hover{
+    color: #DFFFFD;
+}
+
+nav ul a:visited{
+    color: #ff8fab;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-family: cormorant;
+    font-size: 20px;
+}
+
+h1{
+    font-family: lavishlyyours;
+}
+
+h3{
+    font-family: cormorant;
+}
+
+.blue{
+    color: #00a6fb;
+}
+
+.pink{
+    color: #ff8fc1;
+}
+
+.mimipink{
+    color: #f1a7c4;
+}
+
+.lightpink{
+    color: rgb(255, 242, 244);
+}
+
+.lightblue{
+    color: #DFFFFD;
+}
+
+/* cookie banner styling */
+#cookiebanner{
+    width: 100vw;
+    height: 200px;
+    background: rgba(255, 167, 201);
+    position: fixed;
+    z-index: 1;
+    bottom: 0px;
+    left: 0px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#cookieclosebutton{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+}
+
+#buttons{
+    right: 30px;
+    gap: 30px;
+    font-size: 20px;
+    width: 1000px;
+    font-family: cormorant;
+}
+
+#buttons button{
+    width: 200px;
+    background-color: #ff8fab;
+    color: #DFFFFD;
+}
+
+#cookietext{
+    font-size: 20px;
+    font-family: cormorant;
+    position: relative;
+    color: #DFFFFD;
+}
+
+#cookiecontent{
+    gap: 40px;
+    position: absolute;
+    left: 80px;
+    right: 30px;
+    top: 50px;
+}
+
+/* set background colour */
+body{
+    background-color: rgba(255, 242, 244);
+}
+
+/* heading */
+#heading a{
+    font-family: lavishlyyours;
+    font-size: 60px;
+    color: #00a6fb;
+}
+
+nav ul{
+    list-style: none;
+    gap: 10px;
+}
+
+nav ul li{
+    font-family: cormorant;
+    font-size: 18px;
+    color: #00a6fb;
+}
+
+.navline{
+    color: #00a6fb;
+}
+
+/* hero */
+#hero{
+    background-image: url(img/waterlilies.jpeg);
+    background-size: cover;
+    color: rgb(255, 242, 244);
+}
+
+/* about */
+#seniorportrait{
+    max-width: 500px;
+}
+
+.socialmedia a{
+    gap: 10px;
+    max-height: 50px;
+}
+
+/*hero */
+#hero{
+    font-family: lavishlyyours;
+    font-size: 67px;
+}
+
+/* footer */
+#email{
+    font-family: cormorant;
+}
+
+#phone{
+    font-family: cormorant;
+}
+
+/* divider */
+.divider{
+    border-bottom: 1px dashed #ff8fab;
+    margin-bottom: 40px;
+    margin-top: 40px
+}
+
+/* portfolio imgs */
+.site a img{
+    max-width: 350px;
+}
+
+/* cat imgs */
+.cat{
+    max-width: 500px;
+}
+
+/* cat fact table */
+.table th{
+    font-family: lavishlyyours;
+    font-size: 30px;
+    color: rgb(255, 242, 244);
+}
+
+.table td{
+    font-family: cormorant;
+    font-size: 20px;
+    color: #f1a7c4
+}
+
+.catfacts{
+    font-family: lavishlyyours;
+    font-size: 50px;
+}
+
+.table tbody tr td{
+    background-color: rgb(255, 242, 244);
+}
+
+.table tbody tr th{
+    background-color: #f1a7c4;
+}
+
+#footerline{
+    border: dashed 1px #f1a7c4;
+}
