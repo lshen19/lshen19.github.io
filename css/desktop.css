@@ -1,33 +1,141 @@
-/* make icons respond */
-h1, h2, h3{
-    color: #A4DDED;
+/* font styling */
+@font-face{
+    font-family: upright;
+    src: url(fonts/Cormorant_Upright/CormorantUpright-Regular.ttf);
 }
 
+
+@font-face{
+    font-family: french;
+    src: url(fonts/IM_Fell_French_Canon_SC/IMFellFrenchCanonSC-Regular.ttf);
+}
+
+@font-face{
+    font-family: ballet;
+    src: url(fonts/Ballet/Ballet-Regular-VariableFont_opsz.ttf);
+}
+
+@font-face{
+    font-family: monsieur;
+    src: url(fonts/Monsieur_La_Doulaise/MonsieurLaDoulaise-Regular.ttf);
+}
+
+/* colour palette */
+:root {
+  --petal-pink: #F5D3E8;
+  --lily-pink: #f295b5;
+  --mint-green: #b0e6b4; 
+  --pond-blue: #b3f0ff;
+  --lilypad-green: #a0e09b;
+  --lily-white: #FAFBF7;
+  --text: #B26489;
+}
+h1 {
+  color: var(--lily-pink);
+  font-family: monsieur;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+}
+h2, h3, h4{
+    color: var(--text);
+    font-family: french;
+}
+h2 {
+    font-size: 10px;
+}
+h3 {
+    font-size: 30px;
+}
+
+p{
+    color: #B26489;
+    font-family: upright;
+}
 body{
-    background-color: #FFDAE9;
+    background:
+    url(../images/lily.png) bottom right / 400px no-repeat,
+    radial-gradient(circle at top left,  rgba(176,230,180,0.65), transparent 65%),
+    radial-gradient(circle at bottom right, rgba(195,243,255,0.65), transparent 70%),
+    radial-gradient(circle at top center, rgba(255, 131, 174, 0.7), transparent 70%),
+    #ffe1ed;
+    padding: 50px;
+    box-shadow:
+    0 0 40px rgba(211, 235, 245, 0.4),
+    inset 0 0 40px rgba(255, 255, 255, 0.4);
+    background-clip: padding-box;
+    filter: saturate(1.2);
+
 }
-a:hover{
-    cursor: pointer;
-    filter: brightness(0.5);
+
+#container{
+  background:
+    radial-gradient(circle at center,
+      rgba(152, 228, 255, 0.4), transparent 90%),
+    radial-gradient(circle at top left,
+      rgba(255, 234, 242, 0.7), transparent 70%),
+    radial-gradient(circle at top right,
+      rgba(255, 234, 242, 0.7), transparent 70%),
+    radial-gradient(circle at bottom left,
+      rgba(255, 234, 242, 0.7), transparent 70%),
+    radial-gradient(circle at bottom right,
+      rgba(255, 234, 242, 0.7), transparent 70%)
+  ;
+  border: 3px dotted var(--lilypad-green);
+  border-radius: 35px;
+  padding: 40px 20px;
+
+  box-shadow:
+    0 0 40px rgba(220, 248, 255, 0.225),
+    inset 0 0 30px rgba(255, 255, 255, 0.4);
 }
+
 
 #assignments{
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 200px;
+    justify-content: center;
+    min-height: 300px;
 }
 .icons{
     display: flex;
     justify-content: center;
-    gap: 65px;
+    padding: 0px;
+    flex-wrap: wrap;
 }
 
 .assignment{
     display: flex;
     flex-direction: column;
-    color: #50C878;
+    color: #B26489;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 210px;
+    padding: 10px;
 }
 .assignment a img{
-    max-height: 70px;
+    max-height: 120px;
+    width: 120px;
+    display: block;
+    border: 2px solid #8edbed;
+    border-radius: 50%;
+}
+.assignment a img:hover {
+    opacity: 0.9;
+    transform: scale(1.1);
+    box-shadow: none;
+    filter: drop-shadow(0 0 25px rgb(81, 163, 185));
+
+}
+
+a:hover{
+    cursor: pointer;
+}
+#assignments {
+  position: relative;
+  border-radius: 30px;
 }
