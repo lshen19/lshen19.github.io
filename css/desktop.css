@@ -39,15 +39,20 @@ h1 {
   margin-bottom: 20px;
   border-radius: 25px;
 }
-h2, h3, h4{
+h3, h4, h5{
     color: var(--text);
     font-family: french;
 }
 h2 {
+  color: #f295b5;
+  font-family: upright;
+  font-size: 19px;
+}
+h5 {
     font-size: 10px;
 }
 h3 {
-    font-size: 30px;
+    font-size: 22px;
 }
 
 p{
@@ -61,7 +66,7 @@ body{
     radial-gradient(circle at bottom right, rgba(195,243,255,0.65), transparent 70%),
     radial-gradient(circle at top center, rgba(255, 131, 174, 0.7), transparent 70%),
     #ffe1ed;
-    padding: 50px;
+    padding: 20px 110px;
     box-shadow:
     0 0 40px rgba(211, 235, 245, 0.4),
     inset 0 0 40px rgba(255, 255, 255, 0.4);
@@ -85,7 +90,7 @@ body{
   ;
   border: 3px dotted var(--lilypad-green);
   border-radius: 35px;
-  padding: 40px 20px;
+  padding: 20px 20px;
 
   box-shadow:
     0 0 40px rgba(220, 248, 255, 0.225),
@@ -124,7 +129,7 @@ body{
     border: 2px solid #8edbed;
     border-radius: 50%;
 }
-.assignment a img:hover {
+.assignment a img:hover{
     opacity: 0.9;
     transform: scale(1.1);
     box-shadow: none;
@@ -138,4 +143,15 @@ a:hover{
 #assignments {
   position: relative;
   border-radius: 30px;
+}
+#marketing {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#coding {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
